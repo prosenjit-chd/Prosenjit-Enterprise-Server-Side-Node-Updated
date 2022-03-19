@@ -36,3 +36,7 @@ database.once('connected', () => {
 app.listen(port, () => {
     console.log(`Server Started at ${port}`)
 })
+
+app.get('/', (req, res) => {
+    res.send('Prosenjit App Server is running successfully');
+});
